@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Price trends</title>
+</head>
+<body>
+<h1>Price Trends in each city</h1>
+
+<script>
+
+if(window.XMLHttpRequest){
+	
+	xmlhttp=new XMLHttpRequest();
+	
+}else{
+	
+	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+}
+
+xmlhttp.open("GET","NewFile.xml",false);
+xmlhttp.send();
+xmlDoc = xmlhttp.responseXML;
+
+document.write("<table border='1' width='50%' style='font-size:35px;'>");
+
+document.write("<tr><th>City Name</th><th>Price Range</th><th>Price Rise</th></tr>");
+var x = xmlDoc.getElementByTagName("price-trends");
+for(i=0;i<x.length;i++){
+	document.write("<tr><td>");
+	document.write(x[i].getElementByTagName("state")[0].childNodes[0].nodeValue);
+	document.write("</td><td>");
+	document.write(xmlDoc.getElementByTagName("price-range")[i].childNodes[0].nodeValue);
+	document.write("</td><td>");
+	document.write(xmlDoc.getElementByTagName("price-rise")[i].childNodes[0].nodeValue);
+	document.write("</td></tr>");
+}
+
+document.write("</table>")
+
+</script>
+</body>
+</html>

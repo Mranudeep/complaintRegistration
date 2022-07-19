@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<te>
+<price-trends>
+<Department>Electricity department</Department>
+<Officer>Ramakrishna</Officer>
+<Phone_number> 123456789</Phone_number>
+</price-trends>
+
+<price-trends>
+<Department>Electricity department</Department>
+<Officer>Durga</Officer>
+<Phone_number> 654987321</Phone_number>
+</price-trends>
+
+<price-trends>
+<Department>Water department</Department>
+<Officer>Rohith</Officer>
+<Phone_number> 32198654</Phone_number>
+</price-trends>
+
+<price-trends>
+<Department>Water department</Department>
+<Officer>Likhitha</Officer>
+<Phone_number> 456879123</Phone_number>
+</price-trends>
+
+<price-trends>
+<Department> municipal corporation</Department>
+<Officer>Pranathi</Officer>
+<Phone_number> 654321987</Phone_number>
+</price-trends>
+
+<price-trends>
+<Department> municipal corporation</Department>
+<Officer>eshwar</Officer>
+<Phone_number> 654321987</Phone_number>
+</price-trends>
+</te>
